@@ -1,4 +1,4 @@
-package problema1;
+package problema01;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ public class Problema01 {
         // Desenvolva um programa que calcule o coeficiente binomial de dois  números inteiros.
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
-        int n, p;
+        int n = -1, p = -1;
         long c = 0L;
 
 
@@ -18,9 +18,13 @@ public class Problema01 {
 
         String[] numeros = bf.readLine().split(" ");
 
-        n = Integer.parseInt(numeros[0]);
-        p = Integer.parseInt(numeros[1]);
+        try {
+            n = Integer.parseInt(numeros[0]);
+            p = Integer.parseInt(numeros[1]);
 
+        } catch (NumberFormatException e) {
+            System.out.println("Voce de digitar numeros");
+        }
 
 
         // verificando se os numeros não sao naturais
@@ -38,7 +42,7 @@ public class Problema01 {
             }
 
         } else {
-            System.out.println("Os numeros devem ser naturais n diferente de 0");
+            System.out.println("Os numeros devem ser naturais e n deve ser maior ou igual a p");
         }
 
 
