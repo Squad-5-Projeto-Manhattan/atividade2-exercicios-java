@@ -43,7 +43,7 @@ public class Problema03 {
             vogaisDaPalavraAtual = 0;
 
         }
-    
+
         System.out.println("Palavra com mais vogais: " + palavraComMaisVogais);
         System.out.println("Contendo " + vogais + " vogais.");
 
