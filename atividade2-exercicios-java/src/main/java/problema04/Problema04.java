@@ -14,15 +14,14 @@ public class Problema04 {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Digite uma palavras: ");
-        List<String> palavrasLidas = new ArrayList<>(Arrays.asList(bf.readLine().toLowerCase().split("\\s+")));
-        String palavra =  palavrasLidas.get(0).toLowerCase();
-        String palavraInvertida = "";
+        String frase = bf.readLine().toLowerCase();
+        String fraseInvertida = "";
 
-        for(int i = palavra.length() -1; i >= 0 ; i--){
-            palavraInvertida += palavra.charAt(i);
+        for(int i = frase.length() -1; i >= 0 ; i--){
+            fraseInvertida += frase.charAt(i);
         }
 
-        if(palavra.equals(palavraInvertida)){
+        if(frase.equals(fraseInvertida)){
             System.out.println("A palavra é um palindromo");
         } else {
             System.out.println("A palavra não é um palindromo");
