@@ -8,6 +8,10 @@ import java.util.List;
 
 public class Problema02 {
     public static void main(String[] args) throws IOException {
+//        Elabore um programa que leia uma lista de números e retorne a
+//        média dos números pares e ímpares separadamente.
+
+
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         String[] numerosLidos;
         List<Integer> pares = new ArrayList<>();
@@ -47,9 +51,11 @@ public class Problema02 {
 
         System.out.print("Numeros pares lidos: ");
         printNumeros(pares);
+        System.out.println("Media: "  + mediaNumeros(pares));
 
         System.out.print("Numeros impares lidos: ");
         printNumeros(impares);
+        System.out.println("Media: "  + mediaNumeros(impares));
 
 
     }
@@ -62,6 +68,15 @@ public class Problema02 {
         }
         // nova linha
         System.out.println();
+    }
+
+    public static Integer mediaNumeros(List<Integer> numeros){
+        int soma = 0;
+        for (Integer n: numeros) {
+            soma += n;
+        }
+
+        return soma / numeros.size();
     }
 
 }
