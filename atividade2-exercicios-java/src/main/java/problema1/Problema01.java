@@ -9,30 +9,50 @@ public class Problema01 {
         // Desenvolva um programa que calcule o coeficiente binomial de dois  números inteiros.
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
-        int a, b;
+        int n, p;
+        long c = 0L;
 
-        System.out.println("Digite dois numeros inteiros: ");
+
+        System.out.println("--- Calculador de coeficiente binomial ---");
+        System.out.println("Digite dois numeros inteiros( n & p ): ");
 
         String[] numeros = bf.readLine().split(" ");
 
-        a = Integer.parseInt(numeros[0]);
-        b = Integer.parseInt(numeros[1]);
+        n = Integer.parseInt(numeros[0]);
+        p = Integer.parseInt(numeros[1]);
 
-        System.out.println(a);
 
-        long C = binomio(a, b);
 
-        System.out.println(C);
+        // verificando se os numeros não sao naturais
+        if(n >= 0 && 0 <= p) {
+
+            // se forem naturais, verifica se n é maior que p
+            if(n >= p) {
+                c = binomio(n, p);
+
+                // exibe o resultado
+                System.out.println("Resultado: " + c);
+
+            } else {
+                System.out.println("O numero n deve ser maior que p!");
+            }
+
+        } else {
+            System.out.println("Os numeros devem ser naturais n diferente de 0");
+        }
+
+
 
     }
 
     // formula utilizada encontrada neste site
     // https://miniwebtool.com/br/binomial-coefficient-calculator/?n=9&k=3
 
-    static long binomio(int n, int k) {
-        if ((n == k) || (k == 0))
+    static long binomio(int n, int p) {
+        if ((n == p) || (p == 0))
             return 1;
         else
-            return binomio(n - 1, k) + binomio(n - 1, k - 1);
+            // chamada recursiva para o calculo fatorial dos termos
+            return binomio(n - 1, p) + binomio(n - 1, p - 1);
     }
 }
