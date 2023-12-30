@@ -58,6 +58,8 @@ public class Problema02 {
         System.out.println("Media: "  + mediaNumeros(impares));
 
 
+        bf.close();
+
     }
 
     public static void printNumeros(List<Integer> numeros){

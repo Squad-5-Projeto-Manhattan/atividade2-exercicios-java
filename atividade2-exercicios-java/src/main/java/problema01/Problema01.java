@@ -45,7 +45,7 @@ public class Problema01 {
             System.out.println("Os numeros devem ser naturais e n deve ser maior ou igual a p");
         }
 
-
+        bf.close();
 
     }
 

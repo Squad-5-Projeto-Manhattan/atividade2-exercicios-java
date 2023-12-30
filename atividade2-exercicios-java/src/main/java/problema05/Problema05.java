@@ -27,6 +27,6 @@ public class Problema05 {
         // imprimimos o tamanho do set
         System.out.println("Quantidade de substrings: " + set.size());
 
-
+        bf.close();
     }
 }

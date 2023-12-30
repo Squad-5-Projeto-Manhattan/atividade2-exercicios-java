@@ -47,6 +47,7 @@ public class Problema03 {
         System.out.println("Palavra com mais vogais: " + palavraComMaisVogais);
         System.out.println("Contendo " + vogais + " vogais.");
 
-
+        bf.close();
     }
+
 }

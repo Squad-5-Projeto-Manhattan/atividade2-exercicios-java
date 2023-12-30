@@ -26,5 +26,7 @@ public class Problema04 {
         } else {
             System.out.println("A frase não é um palindromo");
         }
+
+        bf.close();
     }
 }
