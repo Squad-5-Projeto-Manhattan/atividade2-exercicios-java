@@ -22,9 +22,9 @@ public class Problema04 {
         }
 
         if(frase.equals(fraseInvertida)){
-            System.out.println("A palavra é um palindromo");
+            System.out.println("A frase é um palindromo");
         } else {
-            System.out.println("A palavra não é um palindromo");
+            System.out.println("A frase não é um palindromo");
         }
     }
 }
