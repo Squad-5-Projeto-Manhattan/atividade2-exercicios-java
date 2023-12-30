@@ -8,11 +8,15 @@ import java.util.List;
 
 public class Problema06 {
     public static void main(String[] args) throws IOException {
-//        Desenvolva um programa que determine se um número é um número
-//        de Armstrong.
+        //   Desenvolva um programa que determine se um número é um número
+        //   de Armstrong.
 
         // um numero de armstrong, ou tambem conhecido com numero narcisista, é um numero que se
         // elevarmos seus digitos pela quantidade de algarismo, obtemos o proprio numero
+
+        // https://en.wikipedia.org/wiki/Narcissistic_number
+        // https://www.youtube.com/watch?v=yvoG3ubSxg4&ab_channel=TodaaMatem%C3%A1tica
+
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         double soma = 0;
 
