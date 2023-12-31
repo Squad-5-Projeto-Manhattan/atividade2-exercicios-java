@@ -3,6 +3,7 @@ package problema04;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -17,6 +18,8 @@ public class Problema04 {
         String frase = bf.readLine().toLowerCase();
         String fraseInvertida = "";
 
+        frase = removeAcentos(frase);
+
         for(int i = frase.length() -1; i >= 0 ; i--){
             fraseInvertida += frase.charAt(i);
         }
@@ -28,5 +31,9 @@ public class Problema04 {
         }
 
         bf.close();
+    }
+
+    private static String removeAcentos(String frase) {
+        return Normalizer.normalize(frase, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
     }
 }
