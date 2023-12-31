@@ -8,8 +8,13 @@ import java.util.List;
 
 public class Problema25 {
     public static void main(String[] args) throws IOException {
-//        Escreva um programa que determine se um número é um número de
-//        Catalan
+        //  Escreva um programa que determine se um número é um número de
+        //  Catalan
+
+        // https://pt.wikipedia.org/wiki/N%C3%BAmeros_de_Catalan
+        // https://www.youtube.com/watch?v=d24Qx-emJD0&ab_channel=AHoradoBizu
+
+
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         Long numeroConsiderado = -1L;
         List<Long> numerosDeCatalan = new ArrayList<>();
