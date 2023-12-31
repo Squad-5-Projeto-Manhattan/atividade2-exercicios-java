@@ -13,6 +13,7 @@ public class Problema25 {
 
         // https://pt.wikipedia.org/wiki/N%C3%BAmeros_de_Catalan
         // https://www.youtube.com/watch?v=d24Qx-emJD0&ab_channel=AHoradoBizu
+        // https://www.calculatoratoz.com/pt/nth-catalan-number-calculator/Calc-31986
 
 
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
