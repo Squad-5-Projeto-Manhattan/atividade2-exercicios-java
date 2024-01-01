@@ -1,4 +1,4 @@
-package igor.problema08;
+package problema08;
 
 import java.io.BufferedReader;
 import java.io.IOException;
