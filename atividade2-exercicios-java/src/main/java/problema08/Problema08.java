@@ -1,8 +1,10 @@
-package igor.problema08;
+package problema08;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.NumberFormat;
+import java.util.Arrays;
 
 public class Problema08 {
     public static void main(String[] args) throws IOException {
