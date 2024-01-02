@@ -1,3 +1,5 @@
+package melissa;
+
 import java.util.Scanner;
 
 public class Problema22 {

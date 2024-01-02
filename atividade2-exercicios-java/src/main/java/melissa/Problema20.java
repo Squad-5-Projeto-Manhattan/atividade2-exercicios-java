@@ -43,7 +43,7 @@ public class Problema20 {
 
 
 // sugestao de melhoria
-// os trechos dentro do comentario com ############### podem ser substituidos pelas seguintes linhas        
+// os trechos dentro do comentario com ############### podem ser substituidos pelas seguintes linhas
 //        String[] listaDeStrings;
 //
 //        System.out.print("Digite a lista de palavras: ");
