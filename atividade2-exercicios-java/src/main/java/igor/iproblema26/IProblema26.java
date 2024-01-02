@@ -1,11 +1,11 @@
-package igor.problema26;
+package igor.iproblema26;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class Problema26 {
+public class IProblema26 {
 
     // declarando as filas
     static Queue<Integer> fila;
