@@ -10,7 +10,7 @@ import java.util.Stack;
 public class problema15 {
     public static void main(String[] args) {
         Stack<Integer> pilha = new Stack<>();
-        int numeroInformado, verificaEnquanto, somaNumerosImpares = 0;
+        int numeroInformado, verificaEnquanto;
         Scanner scanner = new Scanner(System.in);
         // Adicionando elementos à pilha
         do {
