@@ -6,6 +6,8 @@ public class problema10 {
 
     public static void main(String[] args) {
 
+        //  https://www.alura.com.br/conteudo/java-collections 
+
         Scanner scanner = new Scanner(System.in);
 
         List<String> lista = new ArrayList<>();

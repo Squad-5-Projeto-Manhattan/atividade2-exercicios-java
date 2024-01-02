@@ -16,6 +16,8 @@ public class problema11 {
         resultado =  sHarmonica(numeroInformadoU);
 
         System.out.println("RESULTADO SÉRIE HARMONICA");
+
+        //O método valueOf é um método estático que recebe um argumento de qualquer tipo e o converte em um objeto String, que pode ser então processado por métodos como print
         System.out.printf(String.valueOf(resultado));
 
 
