@@ -18,6 +18,8 @@ public class problema12 {
         //O método valueOf é um método estático que recebe um argumento de qualquer tipo e o converte em um objeto String, que pode ser então processado por métodos como print
         System.out.printf(String.valueOf(formula));
 
+        scanner.close();
+
     }
 
 

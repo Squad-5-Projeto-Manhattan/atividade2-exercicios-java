@@ -29,6 +29,8 @@ public class problema15 {
         inverterPilha(pilha);
 
         System.out.println("Pilha invertida: " + pilha);
+
+        scanner.close();
     }
 
     //Metodo que recbe a pilha de inteiros e realiza a inversão;
