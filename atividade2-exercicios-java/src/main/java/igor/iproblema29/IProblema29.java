@@ -1,11 +1,11 @@
-package igor.problema29;
+package igor.iproblema29;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Random;
 
-public class Problema29 {
+public class IProblema29 {
     public static void main(String[] args) throws IOException {
 //        Implemente um programa que calcule a média ponderada de uma
 //        lista de notas, onde os pesos são gerados aleatoriamente.

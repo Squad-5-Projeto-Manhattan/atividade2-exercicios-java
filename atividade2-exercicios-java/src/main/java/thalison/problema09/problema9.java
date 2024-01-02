@@ -1,5 +1,7 @@
 package thalison.problema09;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class problema9 {
@@ -9,39 +11,46 @@ public class problema9 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Informe quantidade de números inteiros");
-        int qtdInformada = scanner.nextInt();
 
-        int [] vetor = new int[qtdInformada];
 
-        for (int i = 0; i <= qtdInformada; i++) {
-            if (i <= qtdInformada){
-                vetor[i] = scanner.nextInt();
-            }
+        System.out.printf("QUANTOS NÚMEROS DESEJA ADICIONAR:");
+        int qtdNumero = scanner.nextInt();
+
+        int [] vetorDeNumeros = new int[qtdNumero];
+
+        for (int i = 0; i < qtdNumero; i++) {
+            vetorDeNumeros[i] = scanner.nextInt();
         }
 
-        int resultVerificao = verificaNumero(vetor, qtdInformada);
+        int resultado = encontrarMenosFrequente(vetorDeNumeros);
 
-        System.out.printf("O número menos frequente é:" + resultVerificao);
+        System.out.println("O número menos frequente no vetor é: " + resultado);
     }
 
-        public static int verificaNumero(int [] vetor, int qtdInformada){
+    public static int encontrarMenosFrequente(int[] vetor) {
+        // Use um HashMap para contar a frequência de cada elemento no vetor
+        Map<Integer, Integer> contagemElementos = new HashMap<>();
 
-        int [] contVet = new int[10];
-
-        for (Integer numero : vetor) {
-            contVet[numero]++;
+        for (int elemento : vetor) {
+            contagemElementos.put(elemento, contagemElementos.getOrDefault(elemento, 0) + 1);
         }
 
-        int menosFrequente = vetor[0];
+        // Encontre o elemento com a menor frequência
+        int menosFrequente = Integer.MAX_VALUE;
+        int menorContagem = Integer.MAX_VALUE;
 
-        for (int numero : vetor) {
-                if (contVet[numero] < contVet[menosFrequente]) {
-                    menosFrequente = numero;
-                }
+        for (Map.Entry<Integer, Integer> entry : contagemElementos.entrySet()) {
+            int elemento = entry.getKey();
+            int contagem = entry.getValue();
+
+            if (contagem < menorContagem) {
+                menosFrequente = elemento;
+                menorContagem = contagem;
             }
-            return menosFrequente;
         }
+
+        return menosFrequente;
+    }
     }
 
 

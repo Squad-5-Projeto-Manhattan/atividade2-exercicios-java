@@ -1,11 +1,11 @@
-package igor.problema28;
+package igor.iproblema28;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.Normalizer;
 
-public class Problema28 {
+public class IProblema28 {
     public static void main(String[] args) throws IOException {
     //   Elabore um programa que verifique se uma string é um palíndromo de
     //   palavra (desconsiderando espaços e pontuações).

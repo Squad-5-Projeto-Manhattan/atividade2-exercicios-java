@@ -10,7 +10,7 @@ public class problema16 {
     public static void main(String[] args) {
 
         List<Integer> lista = new ArrayList<>();
-        int numeroInformado, verificaEnquanto, somaNumerosImpares = 0;
+        int numeroInformado, verificaEnquanto;
         Scanner scanner = new Scanner(System.in);
 
         do {

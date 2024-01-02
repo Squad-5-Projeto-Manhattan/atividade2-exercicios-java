@@ -1,13 +1,12 @@
-package igor.problema24;
+package igor.iproblema24;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
-public class Problema24 {
+public class IProblema24 {
     public static void main(String[] args) throws IOException {
 //        .Implemente um programa que calcule a soma dos quadrados dos
 //        números ímpares.

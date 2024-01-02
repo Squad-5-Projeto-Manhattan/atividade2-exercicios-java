@@ -15,11 +15,11 @@ public class problema15 {
         // Adicionando elementos à pilha
         do {
 
-            System.out.println("Informe um número:");
+            System.out.println("INFORME UM NÚMERO:");
             numeroInformado = scanner.nextInt();
            pilha.push(numeroInformado);
 
-            System.out.println("Deseja adicionar outro número a lista digite:  1 - sim ou qualquer outro número para sair");
+            System.out.println("PARA ADICIONAR OUTRO NUMERO:  1 - SIM  ou qualquer outro número para SAIR");
             verificaEnquanto = scanner.nextInt();
 
         }while (verificaEnquanto == 1);
@@ -45,7 +45,7 @@ public class problema15 {
         }
     }
 
-
+    //Metodo de inserirNofundo da pilha
     public static void inserirNoFundo(Stack<Integer> pilha, int elemento) {
         if (pilha.isEmpty()) {
             pilha.push(elemento);
