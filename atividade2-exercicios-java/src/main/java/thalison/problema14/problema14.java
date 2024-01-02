@@ -29,6 +29,8 @@ public class problema14 {
 
         // Exibir o resultado
         System.out.println("A média geométrica ponderada é: " + mediaGeometricaPonderada);
+
+        scanner.close();
     }
 
     public static double calcularMediaGeometricaPonderada(ArrayList<Double> numeros, ArrayList<Double> pesos) {

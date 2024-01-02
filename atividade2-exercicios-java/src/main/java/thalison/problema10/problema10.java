@@ -28,6 +28,7 @@ public class problema10 {
         Collections.sort(lista);
         System.out.printf(lista.toString());
 
+        scanner.close();
 
     }
 }

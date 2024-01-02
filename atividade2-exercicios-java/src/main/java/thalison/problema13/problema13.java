@@ -23,5 +23,7 @@ public class problema13 {
 
         System.out.print("A soma dos números ímpares é: " + somaNumerosImpares);
 
+        scanner.close();
+
     }
 }

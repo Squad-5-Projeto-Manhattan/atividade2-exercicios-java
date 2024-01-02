@@ -31,6 +31,6 @@ public class problema16 {
 
         System.out.printf("Lista reversa" + lista);
 
-
+        scanner.close();
     }
 }
