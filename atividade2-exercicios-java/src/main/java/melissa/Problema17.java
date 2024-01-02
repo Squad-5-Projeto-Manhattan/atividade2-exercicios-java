@@ -1,3 +1,5 @@
+package melissa;
+
 class Node {
     int data;      // armazena o valor do nó
     Node next;     // referência para o próximo nó na lista
@@ -50,7 +52,7 @@ class LinkedList {
     }
 }
 
-public class Main {
+public class Problema17 {
     public static void main(String[] args) {
         // cria uma instância de LinkedList
         LinkedList linkedList = new LinkedList();

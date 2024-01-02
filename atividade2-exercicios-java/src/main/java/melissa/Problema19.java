@@ -1,6 +1,9 @@
+package melissa;
+
 import java.util.Scanner;
 
-public class QuadradoMagico {
+public class Problema19 {
+    // QuadradoMagico
 
     // função para verificar se uma matriz é um quadrado mágico
     public static boolean isQuadradoMagico(int[][] matriz) {

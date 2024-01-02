@@ -1,6 +1,9 @@
+package melissa;
+
 import java.util.Scanner;
 
-public class MediaNumerosNegativos {
+public class Problema23 {
+    // MediaNumerosNegativos
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

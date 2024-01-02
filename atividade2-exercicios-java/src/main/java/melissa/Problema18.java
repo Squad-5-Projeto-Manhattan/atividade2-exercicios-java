@@ -1,7 +1,9 @@
+package melissa;
+
 import java.util.Scanner;
 
-public class SomaAlgarismosPrimos {
-
+public class Problema18 {
+    // SomaAlgarismosPrimos
     // função para verificar se um número é primo
     public static boolean isPrime(int number) {
         if (number <= 1) {

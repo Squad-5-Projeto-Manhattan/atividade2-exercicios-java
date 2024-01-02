@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class NumeroTriangularCentrado {
-
+public class Problema22 {
+    // NumeroTriangularCentrado
     // função para verificar se um número é um quadrado perfeito
     public static boolean isQuadradoPerfeito(int num) {
         int raizQuadrada = (int) Math.sqrt(num);
