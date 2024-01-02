@@ -58,7 +58,7 @@ public class Problema19 {
         Scanner scanner = new Scanner(System.in);
 
         // solicita ao usuário o tamanho da matriz
-        System.out.print("Digite o tamanho da matriz (n x n): ");
+        System.out.print("Digite o tamanho da matriz Quadrada: ");
         int tamanho = scanner.nextInt();
 
         // solicita ao usuário os elementos da matriz
