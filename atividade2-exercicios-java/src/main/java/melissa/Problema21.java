@@ -1,7 +1,9 @@
+package melissa;
+
 import java.util.Scanner;
 
-public class CoeficienteBinomial {
-
+public class Problema21 {
+    // CoeficienteBinomial
     // função para calcular o fatorial de um número
     public static long calcularFatorial(int numero) {
         if (numero == 0 || numero == 1) {

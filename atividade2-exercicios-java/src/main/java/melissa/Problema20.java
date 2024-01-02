@@ -1,9 +1,11 @@
+package melissa;
+
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class ContadorPalavrasDistintas {
-
+public class Problema20 {
+    // ContadorPalavrasDistintas
     public static int contarPalavrasDistintas(String[] listaDeStrings) {
         Set<String> palavrasDistintas = new HashSet<>();
 
