@@ -25,10 +25,13 @@ public class Problema20 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // #############################################################
         // solicita ao usuário a quantidade de strings na lista
         System.out.print("Digite o número de strings na lista: ");
         int quantidadeDeStrings = scanner.nextInt();
         scanner.nextLine(); // Consumir a quebra de linha
+
+
 
         // solicita ao usuário as strings
         String[] listaDeStrings = new String[quantidadeDeStrings];
@@ -36,6 +39,16 @@ public class Problema20 {
             System.out.print("Digite a string #" + (i + 1) + ": ");
             listaDeStrings[i] = scanner.nextLine();
         }
+        // #############################################################
+
+
+// sugestao de melhoria
+// os trechos dentro do comentario com ############### podem ser substituidos pelas seguintes linhas        
+//        String[] listaDeStrings;
+//
+//        System.out.print("Digite a lista de palavras: ");
+//        listaDeStrings = scanner.nextLine().split("\\s+");
+
 
         // conta o número de palavras distintas na lista de strings
         int numeroDePalavrasDistintas = contarPalavrasDistintas(listaDeStrings);
