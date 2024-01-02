@@ -21,13 +21,14 @@ public class Problema18 {
     public static int somaAlgarismosPrimos(int num) {
         int sum = 0;
 
-        // loop para iterar sobre cada dígito do número
-        while (num > 0) {
-            int digit = num % 10;  // Obtém o último dígito
-            if (isPrime(digit)) {
+        if (isPrime(num)) {
+            // loop para iterar sobre cada dígito do número
+            while (num > 0) {
+                int digit = num % 10;  // Obtém o último dígito
                 sum += digit;  // Adiciona o dígito primo à soma
+                num /= 10;  // Remove o último dígito do número
             }
-            num /= 10;  // Remove o último dígito do número
+
         }
 
         return sum;
