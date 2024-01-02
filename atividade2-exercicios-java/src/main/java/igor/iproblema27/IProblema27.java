@@ -1,10 +1,10 @@
-package igor.problema27;
+package igor.iproblema27;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Problema27 {
+public class IProblema27 {
     public static void main(String[] args) throws IOException{
         // Crie um programa que encontre o maior número primo menor que um
         // número fornecido.

@@ -1,4 +1,4 @@
-package igor.problema25;
+package igor.iproblema25;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Problema25 {
+public class IProblema25 {
     public static void main(String[] args) throws IOException {
         //  Escreva um programa que determine se um número é um número de
         //  Catalan
